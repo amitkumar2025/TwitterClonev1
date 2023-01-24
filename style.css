@@ -9,9 +9,17 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto Mono', monospace;
   
   
  
+}
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  margin-left: 25px;
+ 
+  
 }
 
 .main {
@@ -24,11 +32,61 @@ body{
 }
 .card {
   margin-top: 25px;
-  padding: 10px;
+  padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
- 
+  min-height: 198px;
+  border-top: 5px solid blue;
+  position: relattive;
   
 }
+
+/* .card-title-subtitle {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  
+  
+} */
+
+.card-title {
+  background-color: blue;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+.card-subtitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: small;
+  word-spacing: -2px;
+  margin-left: 5px;
+}
+
+.card-text {
+  margin-top: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-comment .fa-comment-o {
+  font-size: 25px;
+}
+.card-comment > a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+
+
+
+
+
+
 
 footer {
   background-color: red;
@@ -38,3 +96,23 @@ footer {
   padding-bottom: 20px;
  }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*  */
