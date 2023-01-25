@@ -22,14 +22,59 @@ body{
   
 }
 
+
 .main {
   flex-grow: 1;
 }
 .content {
   margin-top: 100px;
- 
+  
   
 }
+
+.searchfield{
+  width: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  right: 10px;
+  display: block;
+  
+  
+}
+
+form.searchbox input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+  
+}
+
+form.searchbox button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.searchbox button:hover {
+  background: #0b7dda;
+}
+
+form.searchbox::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .card {
   margin-top: 25px;
   padding: 15px;
@@ -81,6 +126,37 @@ body{
 }
 
 
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  background-color: #192733;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+#right {
+  top: 0;
+  left: 120%;
+}
+
+#bottom {
+  top: 52px;
+  left: -7%;
+}
+.hover-text {
+  position: relative;
+  display: inline-block;
+  font-family: Avenir;
+
+  text-align: center;
+}
 
 
 
